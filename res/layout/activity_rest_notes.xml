@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:background="#ffc00a12"
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add some Notes for the Restaurant: "
+            android:textSize="15dp"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/rest_notes_textView"/>
+    <EditText
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/rest_notes_editText"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:background="#fffdfffd"
+            android:paddingLeft="10dp"
+            android:text="ACTIONS"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:background="#ffc00a12"
+            android:paddingLeft="10dp"
+            android:text="ACTIONS"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/rest_notes_button_cancel"/>
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/rest_notes_button_save"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:background="#ffc00a12"
+            android:text="@string/crime_details_label"
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/background_activated">
+
+    <ImageView
+            android:id="@+id/rest_imageView"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:background="@android:color/darker_gray"
+            android:cropToPadding="true"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            />
+
+    <TextView
+            android:id="@+id/crime_list_item_titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:paddingLeft="90dp"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+
+            android:text="Rest title"/>
+
+    <TextView
+            android:id="@+id/crime_list_item_locationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/crime_list_item_titleTextView"
+            android:paddingLeft="40dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:textColor="#ff1420ec"
+            android:textColorHint="#ff2d32ff"
+            android:text="Rest location"/>
+</RelativeLayout>
+

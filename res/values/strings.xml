@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">proFavRestos2</string>
+    <string name="crime_title_hint">Restaurant Name</string>
+    <string name="crime_title_label">Name:</string>
+    <string name="rest_city">Location:</string>
+    <string name="rest_pic">Take A Pic</string>
+    <string name="rest_city_label_hint">Enter name of city</string>
+    <string name="req_info_label">REQUIRED Input</string>
+    <string name="crime_details_label">DETAILS</string>
+    <string name="crime_details_action">ACTION</string>
+
+    <string name="crime_solved_label">Visited?</string>
+    <string name="date_picker_title">Date of restaurant:</string>
+    <string name="crimes_title">Favorite Restaurants</string>
+    <string name="new_crime">New Crime</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="subtitle">Click to View or Hold to Delete</string>
+    <string name="delete_crime">Delete Restaurant</string>
+    <string name="take">take</string>
+    <string name="rest_friend">Did you Visit with a Friend?</string>
+    <string name="crime_report_text">Export Details</string>
+    <string name="crime_report">%1$s!
+        My most recent visit to this Restaurant was on %2$s. %3$s, and %4$s
+    </string>
+    <string name="crime_report_solved"> </string>
+    <string name="crime_report_unsolved"> </string>
+    <string name="crime_report_no_suspect"> I Visited this Restaurant Alone.</string>
+    <string name="crime_report_suspect"> I Visited this Restaurant with my friend, %s.</string>
+    <string name="crime_report_subject">Information about one my Favourite Restaurants</string>
+    <string name="send_report">Send restaurant information via</string>
+
+    <bool name="debug">true</bool>
+
+</resources>

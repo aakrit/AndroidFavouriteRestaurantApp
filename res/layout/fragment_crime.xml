@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+        >
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fffff9fc"
+            android:background="#ff0652ff"
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="@string/req_info_label"
+
+            />
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            >
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="4dp"
+                >
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rest_pic"
+                    style="?android:textAppearance"
+                    />
+
+            <ImageView
+                    android:id="@+id/rest_imageView"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+
+                    android:scaleType="centerInside"
+                    android:background="@android:color/darker_gray"
+                    android:cropToPadding="true"/>
+
+            <ImageButton
+                    android:id="@+id/crime_imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="10dp"
+                    android:textColor="#ff068c33"
+                    android:src="@android:drawable/ic_menu_camera"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/crime_title_label"
+                    style="?android:listSeparatorTextViewStyle"
+                    />
+
+            <EditText
+                    android:id="@+id/crime_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:textColor="#ff1420ec"
+                    android:background="#ffc0c0c0"
+                    android:textColorHint="#ff2926ff"
+                    android:hint="@string/crime_title_hint"
+                    />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rest_city"
+                    style="?android:listSeparatorTextViewStyle"
+                    />
+
+            <EditText
+                    android:id="@+id/crime_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:textColor="#ff1864ff"
+                    android:background="#ffc0c0c0"
+                    android:textColorHint="#ff2d32ff"
+                    android:hint="@string/rest_city_label_hint"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+
+            />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:background="#ffc00a12"
+            android:text="@string/crime_details_label"
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="9dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                />
+
+        <EditText
+                android:id="@+id/rest_phone"
+                android:inputType="phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:textColor="#ff1420ec"
+                android:background="#ffc0c0c0"
+                android:textColorHint="#ff2d32ff"
+                android:hint="Phone number"
+                />
+
+        <Button
+                android:id="@+id/rest_phone_dialButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingRight="50dp"
+                android:textAlignment="center"
+                android:text="CALL"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: "
+                />
+
+        <EditText
+                android:id="@+id/rest_address"
+                android:inputType="textPostalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:textColor="#ff1a5dff"
+                android:background="#ffc0c0c0"
+                android:textColorHint="#ff2d32ff"
+                android:hint="Address"
+                android:layout_marginLeft="11dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/rest_mapButton"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="7dp"
+                android:text="MAPS"
+
+                android:layout_weight="1"
+                />
+
+
+
+
+        <Button
+                android:id="@+id/rest_exportButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:text="@string/crime_report_text"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Visit: "
+                android:textSize="18dp"
+                android:textStyle="italic"
+                />
+
+        <Button
+                android:id="@+id/crime_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friend:  "
+                android:textSize="18dp"
+                android:textStyle="italic"
+                />
+        <Button
+                android:id="@+id/crime_suspectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/rest_friend"
+                />
+
+    </LinearLayout>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="@string/crime_details_action"
+            android:paddingLeft="10dp"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/rest_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="#fffdfffd"
+                android:background="#ffec1428"
+                android:text="CANCEL"
+                />
+
+        <Button
+                android:id="@+id/rest_save"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:textColor="#fffaf1ff"
+                android:background="#ff0f8c08"
+                android:text="SAVE"
+                />
+    </LinearLayout>
+</LinearLayout>
+
